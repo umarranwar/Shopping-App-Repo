@@ -17,6 +17,13 @@ import HomeScreenStyles from './HomeScreenStyles';
 import Icons from 'react-native-vector-icons/FontAwesome';
 const Data = [
   {
+    id: 4,
+    name: 'Black frock',
+    price: 80,
+    Description: 'Black color fancy little girl frock',
+    image: require('../assets/pic4.jpg'),
+  },
+  {
     id: 1,
     name: 'Wedding dress ',
     price: 100,
@@ -37,13 +44,7 @@ const Data = [
     Description: 'Baby girl casual sky blue dress',
     image: require('../assets/pic3.jpg'),
   },
-  {
-    id: 4,
-    name: 'Black frock',
-    price: 80,
-    Description: 'Black color fancy little girl frock',
-    image: require('../assets/pic4.jpg'),
-  },
+  
 ];
 const Data2 = [
   {
@@ -104,7 +105,7 @@ const HomeScreen = ({navigation}) => {
           <Icons
             name="shopping-cart"
             size={40}
-            color="black"
+            color="#a882fa"
             onPress={() => navigation.navigate('AddToCart')}
           />
         </TouchableOpacity>
@@ -123,7 +124,7 @@ const HomeScreen = ({navigation}) => {
           <Icons
             name="user"
             size={40}
-            color="black"
+            color="#ec6bfa"
             onPress={() => setModalVisible(true)}
           />
         </TouchableOpacity>
